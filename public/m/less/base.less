@@ -1,0 +1,116 @@
+@main-color:#006699;
+*{
+    margin: 0;
+    padding: 0;
+    // 盒模型
+    box-sizing: border-box;
+    //清除移动端点击高亮的背景色
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+    border: 0;
+}
+i{
+    font-style: normal;
+}
+img {
+    vertical-align: middle;
+}
+
+//公共样式
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.bt{
+    border-top: 1px solid #ccc;
+}
+.br{
+    border-right: 1px solid #ccc;
+}
+.bb{
+    border-bottom: 1px solid #ccc;
+}
+.bl{
+    border-left: 1px solid #ccc;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+//头部公共部分
+#header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 45px;
+    background-color: @main-color;
+    >h4{
+        font-weight: normal;
+        color: #fff;
+        line-height: 35px;
+        text-align: center;
+        
+    }
+    >a{
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+// 底部的公共部分
+#footer{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: @main-color;
+        .mui-row{
+            .mui-col-xs-3{
+                text-align: center;
+                &.active{
+                    >a{
+                        color: orangered;
+                        >p{
+                            color: orangered;
+                        }
+                    }
+                    
+                }
+                >a{
+                    padding-top: 7px;
+                    color: #fff;
+                    
+                    >p{
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+}

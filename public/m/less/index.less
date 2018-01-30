@@ -1,0 +1,144 @@
+@import 'base.less';
+//滑动区域
+#wrapper{
+    height: 100%;
+    background-color: #fff;
+    padding: 45px 0;
+    .list{
+        background-color: #fff;
+    }
+}
+
+#inner{
+    padding: 10px;
+    // 导航部分
+    #nav{
+        margin-bottom: 10px;
+        .mui-content{
+            .mui-row{
+                .mui-col-xs-4{
+                    >li{
+                        >a{
+                            display: block;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 广告主题部分banner
+    #banner{
+        .mui-content{
+            .mui-row{ 
+                img{
+                    width: 100%;
+                    
+                }  
+               .mui-col-xs-8.left{               
+                  .top{
+                      float: left;
+                      >a{
+                          display: block;                        
+                      }
+                  }
+                  .bottom{
+                    >a{
+                        display: block;
+                       
+                    }
+                }
+               } 
+               .mui-col-xs-4.right{
+                   float: right;
+                   >a{
+                       display: block;
+                       
+                   }
+               }
+            }
+        }
+    }
+    //品牌部分
+    #product{
+        padding-bottom: 45px;
+        .product-brand-area{
+            .title{
+                >a{
+                    display: block;
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }
+                .mui-row{
+                    >div{
+                           >a{
+                               display: block;
+                               >img{
+                                   width: 100%;
+                               }
+                           }
+                   } 
+                }
+        }
+
+        //运动专区部分
+       .area{
+           background-color: #fff;
+           .title{
+               margin-bottom: 5px;
+               >a{
+                   display: block;
+                   >img{
+                       width: 100%;
+                   }
+               }
+           }
+           .mui-row{
+               >div{
+                   padding-bottom: 10px;
+                  >div{
+                      box-shadow: 0px 0px 2px #ccc;
+                    padding-bottom: 10px;
+                    .picture{
+                        display: block;
+                         >img{
+                             width: 100%;
+                         }
+                    }
+                    .price{
+                        
+                        color: #ff552b;
+                        del{
+                         color: #8f8f94;
+                        }
+                    }
+                    &.left{
+                        margin-right: 5px;
+                    }
+                    &.right{
+                        margin-left: 5px;
+                    }
+                    >p{
+                        text-align: center;
+                    }
+                    .mui-btn{
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                  }
+                   
+               }
+           }
+       } 
+
+
+    }
+
+
+
+
+}
