@@ -99,3 +99,55 @@ body {
   color: #fff;
   font-size: 14px;
 }
+body {
+  background-color: #fff;
+}
+#header .fa-arrow-left {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+#header > p {
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 16px;
+}
+#main {
+  padding: 10px;
+  padding-top: 55px;
+}
+#main .mui-input-group {
+  border: 1px solid #eee;
+}
+#main .mui-input-group .mui-input-row {
+  position: relative;
+}
+#main .mui-input-group .mui-input-row > button {
+  position: absolute;
+  right: 20px;
+  width: 100px;
+}
+#main .mui-input-group .mui-button-row .mui-btn-primary {
+  width: 100%;
+}
+#main .mui-input-group .last {
+  padding: 10px;
+}
+#main .mui-input-group .affirm {
+  margin-top: 20px;
+  padding: 10px;
+}
+#main .mui-input-group .affirm > p {
+  color: #333;
+}
+#main .mui-input-group .affirm > p > input {
+  margin-right: 5px;
+}
+#main .mui-input-group .affirm > p > span {
+  float: right;
+  color: #999;
+}

@@ -1,0 +1,101 @@
+@import 'base.less';
+body{
+    background-color: #fff;
+}
+#header{
+    position: fixed;
+    .fa-arrow-left{
+        color: #fff;
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        color: #fff;
+        font-size: 18px;
+        
+    }
+    >p{
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+    .fa-home{
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        color: #fff;
+    }
+}
+#main{
+    padding-bottom: 45px;
+   .productlist-total{
+    .product-title{
+        padding: 10px;
+        color: #000;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+    } 
+    .product-price{
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+        >p{
+            margin-bottom: 0;
+            >span{
+             color: tomato;
+             font-size: 16px;
+             
+            }
+            >del{
+             margin-left: 5px;
+            }
+        }
+    }
+    .product-size{
+     text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        >span{
+         float: left;
+         font-size: 14px;
+         margin-top: 5px;
+        }
+        >ul{
+             >li{
+                 &.active{
+                     background-color: tomato;
+                 }
+             
+             line-height: 30px;
+             float: left;
+             width: 30px;
+             height: 30px;
+             margin-left: 5px;
+             border: 1px solid #ccc;
+            }
+        }
+        
+    }
+    .product-num{
+        padding: 10px;
+        >span{
+            font-size: 14px;
+            color: #666;
+        }
+    }
+ }
+   }
+#footer{
+    background-color: #ccc;
+    padding: 6px;
+    .fa-shopping-cart{
+        font-size: 30px;
+        color: #666;
+    }
+    >button{
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    
+}

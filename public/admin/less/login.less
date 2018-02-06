@@ -1,0 +1,58 @@
+@import 'base.less';
+body{
+    background-color: #2f4050;
+   
+    #login{
+        padding: 50px 20px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 100px;    
+        width: 600px;
+        height: 350px;
+        background-color: #fff;
+        .form-horizontal{
+            padding-top: 60px;
+            .col-sm-10{
+                background-color:green;
+                padding:0;
+                .fa-user{
+                    display: inline-block;
+                  font-size:30px;
+                  width: 20px;
+                  height: 40px;
+                  background-color:red;
+                
+                }
+                .form-control{
+                float:right;
+                background-color:blue;
+                
+                    // margin-bottom: 20px;
+                    // padding: 20px 10px;
+                }
+            }
+            
+            .btn-default{
+                width: 100%;
+                padding: 10px 0;
+                background-color: blue;
+            }
+        }
+        
+        .icon{
+            >img{
+            width: 120px;
+            height: 120px; 
+            border: 10px solid #fff;
+            border-radius: 50%;
+            }
+
+            position: absolute;
+            overflow: hidden;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -60px;
+        }
+    }
+
+}

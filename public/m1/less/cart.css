@@ -1,0 +1,314 @@
+/* 定义京东主体色变量 */
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+}
+/* 清除浏览器的默认样式 */
+* {
+  margin: 0px;
+  padding: 0px;
+  /* 设置盒模型包含边框 padding和 内容 */
+  box-sizing: border-box;
+  /* 清除移动端点击高亮的背景色 （按住才有用）*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+img {
+  /* 去除图片对齐3px的问题 */
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+h1 {
+  font-weight: normal;
+}
+/* 公共类名 */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+/* 公共的头部区域的样式 */
+#header {
+  position: fixed;
+  left: 0px top: 0px;
+  width: 100%;
+  height: 1.40625rem;
+  background-color: #006699;
+  z-index: 999;
+}
+#header .fa-arrow-left {
+  color: #fff;
+  position: absolute;
+  left: 0.46875rem;
+  top: 0.40625rem;
+}
+#header > form {
+  margin: 0 1.09375rem;
+  padding-top: 0.15625rem;
+}
+#header > form > input {
+  background-color: #fff;
+  text-align: left;
+  font-size: 0.375rem;
+  margin-bottom: 0;
+}
+#header > h4 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.09375rem;
+  font-size: 0.5rem;
+}
+#header .fa-search,
+#header .fa-home,
+#header .fa-refresh {
+  color: #fff;
+  position: absolute;
+  right: 0.46875rem;
+  top: 0.40625rem;
+}
+/* 公共的底部区域的样式 */
+#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1.40625rem;
+  background-color: #006699;
+  z-index: 999;
+}
+#footer .mui-row > div > a {
+  padding: 0.1875rem;
+  color: #fff;
+  font-size: 0.375rem;
+  display: block;
+  text-align: center;
+}
+#footer .mui-row > div > a > i {
+  display: block;
+}
+#footer .mui-row > div.active > a {
+  color: greenyellow;
+}
+main {
+  padding: 1.40625rem 0;
+}
+/* 加载中的样式 */
+#loading {
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 998;
+  margin-top: 0px;
+  top: 0px;
+  /* 默认隐藏 */
+  display: none;
+}
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 4.6875rem;
+  width: 4.6875rem;
+  margin-top: -2.34375rem;
+  margin-left: -2.34375rem;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+.object {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  background-color: #FFF;
+  position: absolute;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-animation: animate 0.8s infinite;
+  animation: animate 0.8s infinite;
+}
+#object_one {
+  top: 0.59375rem;
+  left: 0.59375rem;
+}
+#object_two {
+  top: 0px;
+  left: 2.03125rem;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+#object_three {
+  top: 0.59375rem;
+  left: 3.46875rem;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+#object_four {
+  top: 2.03125rem;
+  left: 4.0625rem;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+#object_five {
+  top: 3.46875rem;
+  left: 3.46875rem;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+#object_six {
+  top: 4.0625rem;
+  left: 2.03125rem;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#object_seven {
+  top: 3.46875rem;
+  left: 0.59375rem;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+#object_eight {
+  top: 2.03125rem;
+  left: 0px;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+@-webkit-keyframes animate {
+  25% {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  75% {
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes animate {
+  50% {
+    -ms-transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+body {
+  background-color: #fff;
+}
+/* 购物车主体 */
+#main .mui-table-view-cell {
+  padding: 0.15625rem 0.625rem;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body {
+  font-size: 0.4375rem;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .product-name {
+  white-space: normal;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .product-price .now-price {
+  color: #f40;
+  font-weight: 600;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .product-price .old-price {
+  color: #ccc;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .mui-pull-right {
+  color: #888;
+  margin-right: 0.625rem;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .product-size {
+  color: #888;
+}
+#main .mui-table-view-cell .mui-media .mui-media-body .product-options {
+  position: absolute;
+  left: 0.9375rem;
+  bottom: 0.3125rem;
+}
+/* 订单区域 */
+#order {
+  position: fixed;
+  width: 100%;
+  bottom: 1.40625rem;
+  height: 1.25rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0.15625rem;
+  font-size: 0.4375rem;
+  line-height: 1.25rem;
+}
+#order .mui-pull-left {
+  color: #f40;
+  font-weight: 600;
+}
+.mui-numbox {
+  width: 3.4375rem;
+}
+.mui-numbox [class*=numbox-btn],
+.mui-numbox [class*=btn-numbox] {
+  width: 0.9375rem;
+}
+/* 商品尺码的公共样式 */
+.product-size {
+  padding: 0.3125rem;
+  border-bottom: 1px solid #ccc;
+}
+.product-size .btn-size {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+  text-align: center;
+  line-height: 0.9375rem;
+  font-size: 0.4375rem;
+  margin-top: 0.15625rem;
+}
+.product-size .btn-size.active {
+  background-color: yellowgreen;
+}

@@ -99,3 +99,44 @@ body {
   color: #fff;
   font-size: 14px;
 }
+#header .fa-arrow-left {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+#header > p {
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 16px;
+}
+#main {
+  padding-top: 45px;
+  height: 100%;
+}
+#main .mui-input-group .mui-input-row > label {
+  text-align: center;
+}
+#main .mui-input-group .mui-input-row input:-webkit-autofill,
+#main .mui-input-group .mui-input-row textarea:-webkit-autofill,
+#main .mui-input-group .mui-input-row select:-webkit-autofill {
+  -webkit-text-fill-color: #ededed !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+  color: #000;
+  background-color: transparent;
+  background-image: none;
+  transition: background-color 50000s ease-in-out 0s;
+}
+#main .mui-input-group .mui-input-row input {
+  color: #000;
+  background-color: transparent;
+}
+#main .mui-button-row .mui-btn-primary {
+  width: 100%;
+}
+#main .register {
+  float: right;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户页面</title>
+    <!-- 引入标题头部的图片 -->
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- 引入mui的css -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <!-- 引入自己写的css -->
+    <link rel="stylesheet/less" href="./less/user.less">
+    <!-- 引入less编译器文件 -->
+    <script src="./lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部部分 -->
+    <header id="header">
+        <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        <p>我的用户页面</p>
+    </header>
+    <!-- 主体部分 -->
+    <main id="main">
+        <div class="usericon">
+            <!-- <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="./images/user.jpg">
+                        <div class="mui-media-body">
+                            用户名:锤子
+                            <p class='mui-ellipsis'>绑定手机:15555555</p>
+                        </div>
+                    </a>
+                </li>
+            </ul> -->
+        </div>
+        <div class="userinfo">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">账号与安全</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">我的购物车</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">我的收货地址</a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button>退出登录</button>
+        </div>
+
+    </main>
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a href="index.html" class="fa fa-home">
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3 active">
+                <a class="fa fa-bars">
+                    <p>分类</p>
+                </a>
+
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-shopping-cart">
+                    <p>购物车</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-user">
+                    <p>会员中心</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- 用户信息模板 -->
+<script id='userInfoTemp' type="text/html">
+    <ul class="mui-table-view">
+       
+        <li class="mui-table-view-cell mui-media">
+            <a href="javascript:;">
+                <img class="mui-media-object mui-pull-left" src="./images/user.jpg">
+                <div class="mui-media-body">
+                    用户名:{{username}}
+                    <p class='mui-ellipsis'>绑定手机:{{mobile}}</p>
+                </div>
+            </a>
+        </li>
+        
+    </ul>
+</script>
+<!-- 引入mui -->
+<script src="./lib/mui/js/mui.js"></script>
+<!-- 引入模板引擎 -->
+<script src="./lib/artTemplate/template.js"></script>
+<!-- 引入zepto -->
+<script src="./lib/zepto/zepto.min.js"></script>
+<!-- 引入自己写的js -->
+<script src="./js/user.js"></script>

@@ -1,0 +1,127 @@
+@import 'base.less';
+body{
+    background-color: #fff;
+    // overflow: hidden;
+}
+#header{
+    .fa-arrow-left{
+        color: #fff;
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        color: #fff;
+        font-size: 18px;
+        
+    }
+    >p{
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+#main{
+    padding-top: 45px;
+    height: 100%;
+    .mui-scroll-wrapper{
+        position: relative;
+        height: 100%;
+        .mui-scroll{
+            
+            padding: 10px;
+            // margin-top: 45px;
+            >form{
+                
+        margin-right: 54px;
+        >input{
+            margin-bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            text-align: left;
+            border: 1px solid @main-color;
+            border-radius: 5px 0px 0px 5pX;
+        }
+        >button{
+            
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 34px;
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+
+    //标题
+    .productlist-title{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .mui-content{
+           .mui-row{
+               >div{
+                   &.active{
+                       a{
+                           color: tomato;
+                       }
+                   }
+                   >li{
+                       padding: 8px 10px;
+                       >a{
+                            color: #666;
+                            font-size: 12px;
+                       }
+                   }
+               }
+           } 
+        }
+    }
+
+     //运动专区部分
+     .area{
+        background-color: #fff;
+        .mui-row{
+            >div{
+                padding-bottom: 10px;
+               >div{
+                   box-shadow: 0px 0px 2px #ccc;
+                 padding-bottom: 10px;
+                 .picture{
+                     display: block;
+                      >img{
+                          width: 100%;
+                      }
+                 }
+                 .price{
+                     
+                     color: #ff552b;
+                     del{
+                      color: #8f8f94;
+                     }
+                 }
+                 &.left{
+                     margin-right: 5px;
+                 }
+                 &.right{
+                     margin-left: 5px;
+                 }
+                 >p{
+                     height: 28px;
+                     line-height: 14px;
+                     overflow: hidden;
+                     margin-bottom: 0;
+                     text-align: center;
+                 }
+                 .mui-btn{
+                     margin-left: 50%;
+                     transform: translateX(-50%);
+                 }
+               }
+                
+            }
+        }
+    } 
+        }
+    }
+
+    
+}

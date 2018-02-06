@@ -99,3 +99,81 @@ body {
   color: #fff;
   font-size: 14px;
 }
+body {
+  overflow: hidden;
+}
+#header {
+  position: relative;
+  padding-top: 5px;
+}
+#header .fa-arrow-left {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+#header > form {
+  padding: 0 35px;
+}
+#header > form > input {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  margin-bottom: 0;
+}
+#main {
+  position: relative;
+  height: 100%;
+  background-color: #ccc;
+  width: 100%;
+}
+#main .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .left > ul > li {
+  width: 90px;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+}
+#main .left > ul > li > a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+}
+#main .left > ul > li.active {
+  background-color: #ccc;
+}
+#main .bigBox {
+  height: 100%;
+  position: relative;
+  margin-left: 90px;
+}
+#main .bigBox .wrapper {
+  padding-top: 10px;
+}
+#main .bigBox .wrapper .list {
+  height: 101%;
+}
+#main .bigBox .wrapper .list > div {
+  background-color: #fff;
+}
+#main .bigBox .wrapper .list > div > p {
+  width: 100%;
+  height: 100%;
+  color: red;
+  margin-bottom: 0;
+  background-color: #ccc;
+}
+#main .bigBox .wrapper .list > div > div > li {
+  text-align: center;
+}
+#main .bigBox .wrapper .list > div > div > li > a > img {
+  width: 100%;
+}
